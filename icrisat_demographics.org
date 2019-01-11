@@ -1,0 +1,64 @@
+#+PROPERTY: header-args:python :results output raw  :noweb no-export :exports code
+
+#+begin_src python 
+import numpy as np
+import pandas as pd
+from collections import OrderedDict
+
+
+r0 = pd.read_csv('~/Data/VLS/MyVLS/VLS1/Chicago/sc.raw',delimiter="\s+",
+                 header=None,skiprows=filter(lambda x: x % 6 != 0,range(81924)),
+                 names=['village','class','hhno','year','dayofint','member','rltohd'])
+
+r1 = pd.read_csv('~/Data/VLS/MyVLS/VLS1/Chicago/sc.raw',delimiter="\s+",
+                 header=None,skiprows=filter(lambda x: x % 6 != 1,range(81924)),
+                 names=['sex','age','marst','educ','yrended','mocc','socc'])
+
+C = pd.concat([r0,r1],axis=1)
+
+# Create unique household ID
+C.village.replace(to_replace={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F'},inplace=True)
+C.sex.replace(to_replace={6:'F',13:'M'},inplace=True)
+
+C['HHID'] = ['%s%d' % l for l in zip(C.village,C.hhno.fillna(0))]
+del C['hhno']
+
+D = C.query('year==75')[['sex','age']]
+
+D.to_csv('./Data/icrisat_agesex.csv')
+#+end_src
+
+#+begin_src python
+  #import plotly.plotly as py
+  import plotly.offline as py
+  import plotly.graph_objs as go
+  import pandas as pd
+  import numpy as np
+
+  Data = pd.read_csv('./Data/icrisat_agesex.csv')
+
+  layout = go.Layout(barmode='overlay',
+                     yaxis=go.layout.YAxis(range=[0, 90], title='Age'),
+                     xaxis=go.layout.XAxis(title='Number'))
+
+  bins = [go.Histogram(y=Data.query('sex=="M"')['age'],
+                       orientation='h',
+                       name='Men',
+                       marker=dict(color='plum'),
+                       hoverinfo='skip'
+                      ),
+          go.Histogram(y=Data.query('sex=="F"')['age'],
+                       orientation='h',
+                       name='Women',
+                       marker=dict(color='purple'),
+                       hoverinfo='skip',
+                       x=-1 * np.ones(len(Data.query('sex=="F"'))),
+                       histfunc="sum"
+                       )
+          ]
+
+  py.init_notebook_mode(connected=True)
+  py.iplot(dict(data=bins, layout=layout))
+
+#+end_src
+
