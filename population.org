@@ -1,0 +1,106 @@
+#+Title: Population Project
+#+Author: Ethan Ligon
+#+EPRESENT_FRAME_LEVEL: 3
+#+OPTIONS: toc:nil pri:t
+
+The idea of this project is to collect and
+make accessible data on the human
+population.
+
+* Deliverables
+   - A :: These deliverables are
+          /required/.  Note that other
+          deliverables may rely on
+          completion of A deliverables.
+   - B :: These deliverables are /very
+          desirable/.
+   - C :: These deliverables would be
+          /nice to have/.
+
+** [#A] Population Statistics
+   A =python= function named =population=
+   that will deliver information to
+   answer the queries of the following
+   form:
+   #+BEGIN_QUOTE
+   In [year] how many
+   [people/males/females] aged [low] to
+   [high] were living in [the
+   world/region/country]?
+   #+END_QUOTE
+
+** [#A] Population DataFrames
+
+   A =python= function that will call the
+   function =population= and return a
+   =pandas= DataFrame indexed by Region
+   or Country and Year, with columns
+   giving counts of people in different
+   age-sex groups.
+  
+** [#B] Population Pyramids
+
+   A =python= function that takes as
+   input a =pandas= DataFrame with
+   columns providing counts of people by
+   age-sex groups, and constructs a
+   "population pyramid" graph for
+   visualizing the data.
+
+** [#C] Animated Population Pyramids
+
+   A =python= function that takes as
+   input a =pandas= DataFrame with
+   columns providing counts of people by
+   age-sex groups, with rows
+   corresponding to different years, and
+   constructs an animated "population
+   pyramid" graph for visualizing how the
+   population changes over time.
+
+** [#C] Population Maps
+
+   A Jupyter notebook which queries a
+   population database and provides
+   visualizations in the form of maps.
+   An example of a library that may be
+   useful is [[https://scitools.org.uk/cartopy/][cartopy]].
+
+** [#C] Other Visualization Tools
+
+   If you think of other ways to organize
+   or visualize population and how it
+   changes over time, this is for you!
+
+** [#A] Presentation
+
+   Each group will be responsible for
+   giving a 12 minute demonstration of
+   the work they've accomplished during
+   the sprint.
+
+* Knowledge
+  - Grasp of tools to visualize population 
+    dynamics;
+  - Broad understanding of composition
+    of human population.
+
+* Skillz
+
+** [#A] Jupyter Notebooks
+   Basic manipulations of Jupyter notebooks
+   on https://datahub.berkeley.edu
+
+** [#A] Use of Indicators API from =python=
+   Use the [[https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation][Indicators API]] to query the
+   on-line World Development Indicators
+   database.
+
+** [#A] Build =pandas.DataFrame=
+   Collect data on population into a
+   [[https://pandas.pydata.org][=pandas=]] DataFrame.
+
+** [#B] Construct plots in =python=    
+   Using =matplotlib=, =plotly=, or similar.
+
+** [#C] Construct world maps using =plotly=
