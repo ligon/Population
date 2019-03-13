@@ -86,6 +86,9 @@ population.
     of human population.
 
 * Skillz
+  :PROPERTIES:
+  :ID:       2bd922a9-1fb6-47ff-82fa-894684290600
+  :END:
 
 ** [#A] Jupyter Notebooks
    Basic manipulations of Jupyter notebooks
