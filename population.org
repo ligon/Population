@@ -71,6 +71,11 @@ population.
    If you think of other ways to organize
    or visualize population and how it
    changes over time, this is for you!
+** [#C] Agricultural Supply
+   Relate changes in agricultural food supply 
+   to changes in population. 
+
+   What would Malthus think?
 
 ** [#A] Presentation
 
@@ -103,6 +108,7 @@ population.
    Collect data on population into a
    [[https://pandas.pydata.org][=pandas=]] DataFrame.
 
+** [#B] Read on-line spreadsheets using =python=
 ** [#B] Construct plots in =python=    
    Using =matplotlib=, =plotly=, or similar.
 
