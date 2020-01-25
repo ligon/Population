@@ -71,6 +71,7 @@ population.
    If you think of other ways to organize
    or visualize population and how it
    changes over time, this is for you!
+
 ** [#C] Agricultural Supply
    Relate changes in agricultural food supply 
    to changes in population. 
@@ -80,7 +81,7 @@ population.
 ** [#A] Presentation
 
    Each group will be responsible for
-   giving a 12 minute demonstration of
+   giving a 15 minute demonstration of
    the work they've accomplished during
    the sprint.
 
