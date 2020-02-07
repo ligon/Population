@@ -64,7 +64,7 @@ population.
    population database and provides
    visualizations in the form of maps.
    An example of a library that may be
-   useful is [[https://scitools.org.uk/cartopy/][cartopy]].
+   useful is [[https://geopandas.org][geopandas]].
 
 ** [#C] Other Visualization Tools
 
@@ -85,7 +85,7 @@ population.
   - Broad understanding of composition
     of human population.
 
-* Skillz
+* Skills
   :PROPERTIES:
   :ID:       2bd922a9-1fb6-47ff-82fa-894684290600
   :END:
@@ -105,5 +105,5 @@ population.
 
 ** [#B] Construct plots in =python=    
    Using =matplotlib=, =plotly=, or similar.
-
-** [#C] Construct world maps using =plotly=
+** [#C] Construct world maps 
+   Consider using =plotly=, =geopandas=, or similar.
