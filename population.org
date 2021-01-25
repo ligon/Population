@@ -111,7 +111,8 @@ population.
    [[https://pandas.pydata.org][=pandas=]] DataFrame.
 
 ** [#B] Read on-line spreadsheets using =python=
-** [#B] Construct plots in =python=    
+** [#B] Construct plots in =python=
    Using =matplotlib=, =plotly=, or similar.
 ** [#C] Construct world maps 
    Consider using =plotly=, =geopandas=, or similar.
+** [#C] Devise other visualizations
