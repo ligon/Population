@@ -1,0 +1,37 @@
+* Project 1: Population resources
+This post will be updated regularly with important links and resources
+throughout the project.
+
+** Overview of Project
+
+See Population Project Deliverables (@29).  Presentations will be held on
+Wednesday, February 17, 2020.
+
+*** Readings
+Please read the following articles before our next class meeting:
+
+Malthus, An Essay of the Principle of Population (1798)
+Chapter 11 of Development Economics (2015) by Alain de Janvry and Elisabeth Sadoulet
+Fuglie (2012), "Productivity Growth in Global Agriculture"
+Lecture material
+
+*** Any lecture notes or Jupyter notebooks shared in weekly lectures or labs.
+
+  - Population I :: [[[https://github.com/ligonteaching/EEP153_Materials/blob/master/Project1/population_lecture1.ipynb][ipynb]]] [[[http://datahub.berkeley.edu/user-redirect/interact?account=ligonteaching&repo=EEP153_Materials&branch=master&path=Project1/population_lecture1.ipynb][datahub]]]
+  - Population II
+  - Population III (Agricultural Production)
+
+*** Coding exercises
+Additional practice exercises introduced during labs that may be helpful to reference.
+
+  - Week 0 Exercises 
+Week 1 Exercises
+Week 2 Exercises
+
+*** Generally helpful python resources                             :noexport:
+
+Berkeley Institute of Data Science (BIDS) 2016 Python Boot Camp videos
+Data 8
+10 Minutes to pandas
+Broadly speaking, pandas.pydata.org will be a very useful resource throughout this project and beyond.
+wbdata documentation
