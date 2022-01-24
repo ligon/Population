@@ -28,7 +28,12 @@ population.
    [high] were living in [the
    world/region/country]?
    #+END_QUOTE
-   
+
+*** Unit test
+   #+begin_src python
+   assert population(year=2000,sex='Male',age_range=(0,100),place='WLD') > 7e9
+   #+end_src
+
 ** [#A] Population DataFrames
  
    A function that returns a =pandas= DataFrame
