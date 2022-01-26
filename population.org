@@ -84,9 +84,31 @@ population.
 ** [#A] Presentation
 
    Each group will be responsible for
-   giving a 15 minute demonstration of
+   creating a 15 minute video demonstration of
    the work they've accomplished during
    the sprint.
+   
+   Note that you will be evaluated on how 
+   well your team managed its time during 
+   the presentation, so try not to go over 
+   15 minutes. Also note that groups 
+   typically discuss or run through their 
+   code in some way during presentations.
+
+** [#A] GitHub Repository containing code
+
+   Create a GitHub repository with your 
+   code and any files necessary to run your 
+   code. See =piazza= post for GitHub resources.
+
+** [#A] Code Review
+
+   We will be randomly assigning each group 
+   to review TWO other groups' code. For the 
+   code review, each group should have their 
+   code (at least a "rough draft" of their 
+   code) ready on February 9th, so that code 
+   reviews can be completed by February 11th.
 
 * Knowledge
   - Grasp of tools to visualize population 
